@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracter Application</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./expense.css" />
+  </head>
+  <body>
+    <!-- <section>
+      <div class="container">
+        <div class="row">
+          <div></div>
+          <div class="col-6">
+            <h1>Taj mahal</h1>
+          </div>
+          <div class="col-6">
+            <h1>Hyderabad</h1>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section>
+      <div
+        class="fluid-container"
+        style="
+          background-color: rgb(11, 11, 235);
+          /* padding: 50px; */
+          padding-left: 200px;
+          padding-right: 200px;
+          height: 100vh;
+        "
+      >
+        <div class="row">
+          <div style="padding: 10px">
+            <div>
+              <h1 class="head">Expense Tracker App</h1>
+              <div
+                style="
+                  border: 1px solid black;
+                  padding: 20px;
+                  background-color: skyblue;
+                "
+              >
+                <h3>Add a New Item :</h3>
+                <form id="forms">
+                  <!-- <div class="d-flex flex-row"> -->
+                  <div style="display: flex" class="each">
+                    <div style="flex: 1">
+                      <span for="type">Type : </span>
+                      <select id="type">
+                        <option value="Choose One">Choose One...</option>
+                        <option value="Card">Card</option>
+                        <option value="Cash">Cash</option>
+                        <option value="CryptoCoin">CryptoCoin</option>
+                        <option value="Others">Others</option>
+                      </select>
+                    </div>
+                    <div style="flex: 1">
+                      <span for="name">Name : </span>
+                      <input type="text" id="name" />
+                    </div>
+                  </div>
+                  <div style="display: flex" class="each">
+                    <div style="flex: 1">
+                      <span for="dates">Date :</span>
+                      <input id="dates" type="date" />
+                    </div>
+
+                    <div style="flex: 1">
+                      <span for="amount">Amount:</span>
+                      <input id="amount" type="text" />
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <button class="btn btn-primary" type="submit">
+                      Add New Expense
+                    </button>
+                  </div>
+                </form>
+
+                <section style="padding: 50px">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th class="table-head">Type</th>
+                        <th class="table-head">Name</th>
+                        <th class="table-head">Date</th>
+                        <th class="table-head">Amount</th>
+                        <th class="table-head">Options</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tableData"></tbody>
+                  </table>
+                </section>
+              </div>
+
+              <!-- bottom -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./expense.js"></script>
+  </body>
+</html>
